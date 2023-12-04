@@ -19,8 +19,12 @@ function getComputerChoice() {
 function displayRunningScore() {
     const yourScore = document.querySelector("div.points > span#you");
     const computerScore = document.querySelector("div.points > span#computer");
-    yourScore.textContent =  userPoints;
-    computerScore.textContent =  compPoints;
+    computerScore.style.fontSize = "x-large";
+    yourScore.style.fontSize = "x-large";
+
+    yourScore.textContent = userPoints;
+    computerScore.textContent = compPoints;
+
 }
 function playRound(playerSelection, computerSelection) {
 
@@ -31,7 +35,7 @@ function playRound(playerSelection, computerSelection) {
         } else {
             winner = 'Computer';
         }
-        
+        displayRunningScore()
         result.textContent += "\r\n" + winner + " won the game.To play again, please refresh the page."
         disableButtons();
         return;
@@ -88,16 +92,16 @@ function playRound(playerSelection, computerSelection) {
         }
     }
 }
-// function game() {
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        playRound(button.id, getComputerChoice());
-    })
-});
-// }
+
 function disableButtons() {
     buttons.forEach(button => {
         button.disabled = true
     })
 }
-// game();
+
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        playRound(button.id, getComputerChoice());
+    })
+});

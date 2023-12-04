@@ -1,5 +1,5 @@
 body {
-    background-color: brown;
+    background-color: #41b3a3;
 }
 
 .content {
@@ -8,12 +8,17 @@ body {
 }
 
 .content img {
-    width: 400px;
+    /* width: 300px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
 }
 
 button {
+    background-color: #c38d9e;
     margin: 30px;
-    color: black;
+    color: white;
     border-radius: 0.3%;
     padding: 15px 20px;
     text-align: center;
@@ -31,4 +36,14 @@ button {
     display: flex;
     margin-top: 10px;
     justify-content: space-between;
+}
+
+h1 {
+    color: black;
+    font-family: "Great Vibes", cursive;
+    font-size: 50px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
 }
