@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
+    <div class="content">
+        <img src="bgimg.png">
+        <div class="points">
+            <span id="you">User points: </span>
+            <span id="computer">Computer points: </span>
+        </div>
 
-    <p>Click one of the buttons to indicate your choice:
+        <div class="buttons">
+            <button id="rock" >Rock</button>
+            <button id="paper" >Paper</button>
+            <button id="scissors" >Scissors</button>
+        </div>
 
-    </p>
+        <div class="result"></div>
 
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button> 
+    </div>
 
-    
-    <p id="cChoice"></p>
-    <p id="yChoice"></p>
-    <div class="result"></div>
-    <p id="finalResult"></p>
-    
     <script src="rps.js"></script>
+
 </body>
+
 </html>
